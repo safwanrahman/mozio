@@ -1,0 +1,13 @@
+# application
+*.pyc
+
+# os and ide
+.idea
+.DS_Store
+.vscode
+.coverage
+code/coverage
+
+data/
+venv/
+code/.pytest_cache/

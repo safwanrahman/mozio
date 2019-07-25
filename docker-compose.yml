@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=postgres://postgres@db:5432/postgres
+      - DJANGO_SETTINGS_MODULE=mozio.settings
+    command: ./manage.py runserver 0.0.0.0:8000
+    ports:
+      - 8000:8000
+
+  db:
+    image: postgres:10
+    environment:
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    volumes:
+      - db:/var/lib/postgresql/data
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.8.0
+    volumes:
+      - esdata1:/usr/share/elasticsearch/data
+
+volumes:
+    db:
+    esdata1:
