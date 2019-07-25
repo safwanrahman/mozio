@@ -124,10 +124,11 @@ CURRENCIES = [
 ]
 AUTH_USER_MODEL = "core.User"
 
+ELASTICSEARCH_URL = config('ELASTICSEARCH_URL')
 
-ELASTICSEARCH_DSL={
+ELASTICSEARCH_DSL = {
     'default': {
-        'hosts': 'elasticsearch:9200'
+        'hosts': ELASTICSEARCH_URL
     },
 }
 
