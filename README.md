@@ -9,3 +9,7 @@ You can setup the project as following
 # API Documentation
 API Documentation can be found here:
 https://safwan.docs.stoplight.io/service-area/service-area-list
+
+# Deployment
+Its deployed using Dokku in Digitalocean.
+http://139.59.27.97.nip.io:49359/
