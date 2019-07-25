@@ -10,6 +10,7 @@ services:
     environment:
       - DATABASE_URL=postgres://postgres@db:5432/postgres
       - DJANGO_SETTINGS_MODULE=mozio.settings
+      - ELASTICSEARCH_URL=http://elasticsearch:9200
     command: ./manage.py runserver 0.0.0.0:8000
     ports:
       - 8000:8000
