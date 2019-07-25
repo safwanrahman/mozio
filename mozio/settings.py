@@ -27,7 +27,7 @@ SECRET_KEY = 'rv69jsr-*#j25hd(yw5)8in+a!1ad*8m0olzg=#c^$mb0z$)m!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -137,7 +137,6 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 20
 }
 
-HTTP_HOST = ["*"]
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
