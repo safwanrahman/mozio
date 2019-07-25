@@ -5,6 +5,8 @@ Mozio
 You can setup the project as following
 - Start the docker containers by running `docker-compose up`
 - Run the django migrations inside the container
+- Create Elasticsearch index by running `./manage.py search_index --rebuild`
+inside the container.
 
 # API Documentation
 API Documentation can be found here:
