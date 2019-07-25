@@ -137,7 +137,7 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 20
 }
 
-
+HTTP_HOST = ["*"]
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
