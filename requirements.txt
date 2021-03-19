@@ -9,7 +9,7 @@ decorator==4.4.0
 dj-database-url==0.5.0
 Django==2.2.3
 django-elasticsearch-dsl==6.4.1
-djangorestframework==3.10.1
+djangorestframework==3.11.2
 drf-yasg==1.16.1
 elasticsearch==6.4.0
 elasticsearch-dsl==6.4.0
